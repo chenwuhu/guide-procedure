@@ -249,3 +249,107 @@ void manage_user()
 {
 
 }
+
+
+//1所有景点信息查询
+void allattractions(){
+	int i;
+	printf("景点编号 景点名称 景点介绍\n");
+	for(i=1;i<=sum;i++){
+		if(g.attr[i].position!=-1)
+		printf("%d%s%s\n",g.attr[i].position,g.attr[i].name,g.attr[i].introduction);
+	}
+}
+
+
+//2具体景点信息查询
+void specifications(){
+	int j;
+	printf("请输入要查询的景点编号\n");
+	scanf("%d",&j);
+	while(j<=0 ||j>sum){
+		printf("你输入的景点编号不存在\n");
+		printf("请重新输入景点编号\n");
+		scanf("%d",&j);
+	}
+	printf("景点编号：%d\n景点名称：%s\n景点介绍：%s\n",g.attr[i].position,g.attr[i].name,g.attr[i].introduction);
+}
+
+//3查询景点间最短路径
+void  shortestpath(){
+	int i,j;
+	printf("请输入要查询的两个景点的编号\n");
+	scanf("%d %d",&i,&j);
+	if(i>sum ||i<=0||j>sum||j<=0){
+		printf("输入信息有误\n");
+		printf("请输入要查询的两个景点的编号\n");
+		scanf("%d %d",&i,&j);
+	}
+	else{
+		floyd(g);//计算最短路径的长度
+		display(g,i,j);//展示最短路径
+	}
+	return 1;
+}
+//计算最短路径的长度
+void floyd(map g){
+	int i,j,k;
+	for(i=1;i<=sum;i++){
+		for(j=1;j<=sum;j++){
+			dist[i][j]=g.attr[i][j].adj;
+			path[i][j]=j;
+		}
+	}
+	for(k=1;k<=sum;k++){
+		for(i=1;i<=sum;i++){
+			for(j=1;j<=sum;j++){
+				if(dist[i][k]+dist[k][j]<dist[i][j]){
+					dist[i][j]=dist[i][k]+dist[k][j];
+					path[i][j]=path[i][k];
+				}
+			}
+		}
+	}
+}
+
+//展示最短路径
+void display(map g,int i,int j){
+	int a,b;
+	a=i,b=j;
+	printf("你要查询的两景点最短路径：\n");
+	printf("%d%s",a,g.attr[a].name);
+	while(path[i][j]!=b){
+		i=path[i][j];
+	}
+	printf("-->%d%s\n\n",b,g.attr[b].name);
+	printf("%s-->%s的最短路径：%d。\n",g.attr[a].name,g.attr[b].name,dist[a][b]);
+}
+
+
+//查询景点间所有路径
+void allpath(map g,int m,int n,int t){
+	int s,k=t+1,length=0;
+	if(a[t]==n){
+		for(s=0;s<t;s++){
+			length=length+g.attr[a[s]][a[s+1]].adj;
+		}
+		if(length<=1000){
+		  for(s=0;s<t;s++){
+			printf("%d%s-->",a[s],g.attr[a[s]].name);
+		}
+		printf("%d%s  ",a[s],g.attr[a[s]].name);
+		printf("总路径长为%d\n",length);
+	  }
+	}	
+	else{
+		s=1;
+		while(s<=g.num){
+			if((g.attr[a[t][s].adj<Infinity)&&(visited[s]==0)){
+				visited[s]=1;
+				a[t+1]=s;
+				visited[s]=0;
+			}
+			s++;
+		}
+	}
+}
