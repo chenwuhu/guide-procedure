@@ -1,5 +1,24 @@
 ﻿#include<stdio.h>
 #include <stdlib.h>
+
+typedef struct arcell//边的权值信息
+{ 	
+int adj;//权值  
+}arcell,adjmatrix[MaxVertexNum][MaxVertexNum]; 
+
+typedef struct vexsinfomation//顶点信息 
+{ 	int number;//景点的编号 
+	char name[20];//景点的名称 
+	char introduction[200];//景点的介绍  
+}vexsinfomation;
+
+typedef struct mgraph//图
+{  	vexsinfo vexs[MaxVertexNum];//顶点 向量（数组） 
+	adjmatrix arcs;//邻接矩阵 
+	int vexnum,arcnum;//顶点数和边数 
+}mgraph;
+
+
 int main()
 {
 	mainwork();
