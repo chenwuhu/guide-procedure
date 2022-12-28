@@ -71,28 +71,7 @@ void menu() {
 	printf("└────────────────────────────┘\n");
 
 }
-void allattractions()//所有景点信息查询
-{
 
-
-
-}
-void specificattractions()//具体景点信息查询 
-{
-	
-
-}
-void shortestpath() //查询景点间最短路径
-{
-
-
-}
-void allpath()//查询景点间所有路径
-{
-
-
-
-}
 void manage_map_information()//管理地图信息
 {
 	int outcome=verification();//权限核验结果。  如果返回结果为1，则可登入系统修改；否则返回上一级
@@ -372,3 +351,4 @@ void allpath(map g,int m,int n,int t){
 		}
 	}
 }
+//
