@@ -1,0 +1,1731 @@
+# 1 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp"
+# 1 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp"
+
+
+
+
+# 1 "d:\\mingw\\include\\stdio.h" 1 3
+# 38 "d:\\mingw\\include\\stdio.h" 3
+       
+# 39 "d:\\mingw\\include\\stdio.h" 3
+# 56 "d:\\mingw\\include\\stdio.h" 3
+# 1 "d:\\mingw\\include\\_mingw.h" 1 3
+# 55 "d:\\mingw\\include\\_mingw.h" 3
+       
+# 56 "d:\\mingw\\include\\_mingw.h" 3
+# 66 "d:\\mingw\\include\\_mingw.h" 3
+# 1 "d:\\mingw\\include\\msvcrtver.h" 1 3
+# 35 "d:\\mingw\\include\\msvcrtver.h" 3
+       
+# 36 "d:\\mingw\\include\\msvcrtver.h" 3
+# 67 "d:\\mingw\\include\\_mingw.h" 2 3
+
+
+
+
+
+
+# 1 "d:\\mingw\\include\\w32api.h" 1 3
+# 35 "d:\\mingw\\include\\w32api.h" 3
+       
+# 36 "d:\\mingw\\include\\w32api.h" 3
+# 59 "d:\\mingw\\include\\w32api.h" 3
+# 1 "d:\\mingw\\include\\sdkddkver.h" 1 3
+# 35 "d:\\mingw\\include\\sdkddkver.h" 3
+       
+# 36 "d:\\mingw\\include\\sdkddkver.h" 3
+# 60 "d:\\mingw\\include\\w32api.h" 2 3
+# 74 "d:\\mingw\\include\\_mingw.h" 2 3
+# 57 "d:\\mingw\\include\\stdio.h" 2 3
+# 69 "d:\\mingw\\include\\stdio.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 1 3 4
+# 216 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 3 4
+
+# 216 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 3 4
+typedef unsigned int size_t;
+# 357 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 3 4
+typedef short unsigned int wint_t;
+# 70 "d:\\mingw\\include\\stdio.h" 2 3
+# 94 "d:\\mingw\\include\\stdio.h" 3
+# 1 "d:\\mingw\\include\\sys/types.h" 1 3
+# 34 "d:\\mingw\\include\\sys/types.h" 3
+       
+# 35 "d:\\mingw\\include\\sys/types.h" 3
+# 62 "d:\\mingw\\include\\sys/types.h" 3
+  typedef long __off32_t;
+
+
+
+
+  typedef __off32_t _off_t;
+
+
+
+
+
+
+
+  typedef _off_t off_t;
+# 91 "d:\\mingw\\include\\sys/types.h" 3
+  typedef long long __off64_t;
+
+
+
+
+
+
+  typedef __off64_t off64_t;
+# 115 "d:\\mingw\\include\\sys/types.h" 3
+  typedef int _ssize_t;
+
+
+
+
+
+
+
+  typedef _ssize_t ssize_t;
+# 95 "d:\\mingw\\include\\stdio.h" 2 3
+
+
+
+
+
+
+
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stdarg.h" 1 3 4
+# 40 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 103 "d:\\mingw\\include\\stdio.h" 2 3
+# 210 "d:\\mingw\\include\\stdio.h" 3
+typedef struct _iobuf
+{
+  char *_ptr;
+  int _cnt;
+  char *_base;
+  int _flag;
+  int _file;
+  int _charbuf;
+  int _bufsiz;
+  char *_tmpfname;
+} FILE;
+# 239 "d:\\mingw\\include\\stdio.h" 3
+extern __attribute__((__dllimport__)) FILE _iob[];
+# 252 "d:\\mingw\\include\\stdio.h" 3
+extern "C" {
+
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * fopen (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * freopen (const char *, const char *, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fflush (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fclose (FILE *);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int remove (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int rename (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * tmpfile (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char * tmpnam (char *);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_tempnam (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _rmtmp (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _unlink (const char *);
+# 289 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char * tempnam (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int rmtmp (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int unlink (const char *);
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int setvbuf (FILE *, char *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void setbuf (FILE *, char *);
+# 342 "d:\\mingw\\include\\stdio.h" 3
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,2,3))) __mingw_fprintf(FILE*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,1,2))) __mingw_printf(const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,2,3))) __mingw_sprintf(char*, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,3,4))) __mingw_snprintf(char*, size_t, const char*, ...);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,2,0))) __mingw_vfprintf(FILE*, const char*, __builtin_va_list);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,1,0))) __mingw_vprintf(const char*, __builtin_va_list);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,2,0))) __mingw_vsprintf(char*, const char*, __builtin_va_list);
+extern int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,3,0))) __mingw_vsnprintf(char*, size_t, const char*, __builtin_va_list);
+# 376 "d:\\mingw\\include\\stdio.h" 3
+extern unsigned int _mingw_output_format_control( unsigned int, unsigned int );
+# 453 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fprintf (FILE *, const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int printf (const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int sprintf (char *, const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vfprintf (FILE *, const char *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vprintf (const char *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vsprintf (char *, const char *, __builtin_va_list);
+# 478 "d:\\mingw\\include\\stdio.h" 3
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,2,3))) __msvcrt_fprintf(FILE *, const char *, ...);
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,1,2))) __msvcrt_printf(const char *, ...);
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,2,3))) __msvcrt_sprintf(char *, const char *, ...);
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,2,0))) __msvcrt_vfprintf(FILE *, const char *, __builtin_va_list);
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,1,0))) __msvcrt_vprintf(const char *, __builtin_va_list);
+ int __attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__ms_printf__,2,0))) __msvcrt_vsprintf(char *, const char *, __builtin_va_list);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _snprintf (char *, size_t, const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _vsnprintf (char *, size_t, const char *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _vscprintf (const char *, __builtin_va_list);
+# 501 "d:\\mingw\\include\\stdio.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,3,4)))
+int snprintf (char *, size_t, const char *, ...);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__format__(__mingw_printf__,3,0)))
+int vsnprintf (char *, size_t, const char *, __builtin_va_list);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+int vscanf (const char * __restrict__, __builtin_va_list);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+int vfscanf (FILE * __restrict__, const char * __restrict__, __builtin_va_list);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+int vsscanf (const char * __restrict__, const char * __restrict__, __builtin_va_list);
+# 646 "d:\\mingw\\include\\stdio.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) ssize_t
+getdelim (char ** __restrict__, size_t * __restrict__, int, FILE * __restrict__);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) ssize_t
+getline (char ** __restrict__, size_t * __restrict__, FILE * __restrict__);
+# 666 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fscanf (FILE *, const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int scanf (const char *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int sscanf (const char *, const char *, ...);
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fgetc (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char * fgets (char *, int, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fputc (int, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fputs (const char *, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char * gets (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int puts (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int ungetc (int, FILE *);
+# 687 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _filbuf (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _flsbuf (int, FILE *);
+
+
+
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int getc (FILE *);
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int getc (FILE * __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) *__F->_ptr++
+    : _filbuf (__F);
+}
+
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putc (int, FILE *);
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putc (int __c, FILE * __F)
+{
+  return (--__F->_cnt >= 0)
+    ? (int) (unsigned char) (*__F->_ptr++ = (char)__c)
+    : _flsbuf (__c, __F);
+}
+
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int getchar (void);
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int getchar (void)
+{
+  return (--(&_iob[0])->_cnt >= 0)
+    ? (int) (unsigned char) *(&_iob[0])->_ptr++
+    : _filbuf ((&_iob[0]));
+}
+
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putchar(int);
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putchar(int __c)
+{
+  return (--(&_iob[1])->_cnt >= 0)
+    ? (int) (unsigned char) (*(&_iob[1])->_ptr++ = (char)__c)
+    : _flsbuf (__c, (&_iob[1]));}
+# 734 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t fread (void *, size_t, size_t, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t fwrite (const void *, size_t, size_t, FILE *);
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fseek (FILE *, long, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long ftell (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void rewind (FILE *);
+# 787 "d:\\mingw\\include\\stdio.h" 3
+typedef long long fpos_t;
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fgetpos (FILE *, fpos_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fsetpos (FILE *, const fpos_t *);
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int feof (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int ferror (FILE *);
+
+
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int feof (FILE * __F){ return __F->_flag & 0x0010; }
+inline __attribute__((__cdecl__)) __attribute__((__nothrow__)) int ferror (FILE * __F){ return __F->_flag & 0x0020; }
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void clearerr (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void perror (const char *);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _popen (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _pclose (FILE *);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * popen (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int pclose (FILE *);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _flushall (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _fgetchar (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _fputchar (int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _fdopen (int, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _fileno (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _fcloseall (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _fsopen (const char *, const char *, int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _getmaxstdio (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _setmaxstdio (int);
+# 859 "d:\\mingw\\include\\stdio.h" 3
+unsigned int __attribute__((__cdecl__)) __mingw_get_output_format (void);
+unsigned int __attribute__((__cdecl__)) __mingw_set_output_format (unsigned int);
+
+
+
+
+
+
+
+int __attribute__((__cdecl__)) __mingw_get_printf_count_output (void);
+int __attribute__((__cdecl__)) __mingw_set_printf_count_output (int);
+# 885 "d:\\mingw\\include\\stdio.h" 3
+inline __attribute__((__always_inline__)) unsigned int __attribute__((__cdecl__)) _get_output_format (void)
+{ return __mingw_get_output_format (); }
+
+inline __attribute__((__always_inline__)) unsigned int __attribute__((__cdecl__)) _set_output_format (unsigned int __style)
+{ return __mingw_set_output_format (__style); }
+# 910 "d:\\mingw\\include\\stdio.h" 3
+inline __attribute__((__always_inline__)) int __attribute__((__cdecl__)) _get_printf_count_output (void)
+{ return 0 ? 1 : __mingw_get_printf_count_output (); }
+
+inline __attribute__((__always_inline__)) int __attribute__((__cdecl__)) _set_printf_count_output (int __mode)
+{ return 0 ? 1 : __mingw_set_printf_count_output (__mode); }
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fgetchar (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fputchar (int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * fdopen (int, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fileno (FILE *);
+# 930 "d:\\mingw\\include\\stdio.h" 3
+inline __attribute__((__always_inline__)) FILE * __attribute__((__cdecl__)) __attribute__((__nothrow__)) fopen64 (const char *, const char *);
+inline __attribute__((__always_inline__))
+FILE * __attribute__((__cdecl__)) __attribute__((__nothrow__)) fopen64 (const char * filename, const char * mode)
+{ return fopen (filename, mode); }
+
+int __attribute__((__cdecl__)) __attribute__((__nothrow__)) fseeko64 (FILE *, __off64_t, int);
+
+
+
+
+
+
+inline __attribute__((__always_inline__)) __off64_t __attribute__((__cdecl__)) __attribute__((__nothrow__)) ftello64 (FILE *);
+inline __attribute__((__always_inline__))
+__off64_t __attribute__((__cdecl__)) __attribute__((__nothrow__)) ftello64 (FILE * stream)
+{ fpos_t __pos; return (fgetpos(stream, &__pos)) ? -1LL : (__off64_t)(__pos); }
+# 958 "d:\\mingw\\include\\stdio.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fwprintf (FILE *, const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wprintf (const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vfwprintf (FILE *, const wchar_t *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vwprintf (const wchar_t *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _snwprintf (wchar_t *, size_t, const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _vscwprintf (const wchar_t *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _vsnwprintf (wchar_t *, size_t, const wchar_t *, __builtin_va_list);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fwscanf (FILE *, const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wscanf (const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int swscanf (const wchar_t *, const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t fgetwc (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t fputwc (wchar_t, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t ungetwc (wchar_t, FILE *);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int swprintf (wchar_t *, const wchar_t *, ...);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int vswprintf (wchar_t *, const wchar_t *, __builtin_va_list);
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t * fgetws (wchar_t *, int, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int fputws (const wchar_t *, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t getwc (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t getwchar (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t putwc (wint_t, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t putwchar (wint_t);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t * _getws (wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _putws (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _wfdopen(int, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _wfopen (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _wfreopen (const wchar_t *, const wchar_t *, FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _wfsopen (const wchar_t *, const wchar_t *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t * _wtmpnam (wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t * _wtempnam (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wrename (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wremove (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _wperror (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * _wpopen (const wchar_t *, const wchar_t *);
+
+
+
+
+
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int snwprintf (wchar_t *, size_t, const wchar_t *, ...);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int vsnwprintf (wchar_t *, size_t, const wchar_t *, __builtin_va_list);
+# 1016 "d:\\mingw\\include\\stdio.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int vwscanf (const wchar_t *__restrict__, __builtin_va_list);
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+int vfwscanf (FILE *__restrict__, const wchar_t *__restrict__, __builtin_va_list);
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+int vswscanf (const wchar_t *__restrict__, const wchar_t * __restrict__, __builtin_va_list);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) FILE * wpopen (const wchar_t *, const wchar_t *);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t _fgetwchar (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t _fputwchar (wint_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _getw (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _putw (int, FILE *);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t fgetwchar (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wint_t fputwchar (wint_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int getw (FILE *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putw (int, FILE *);
+
+
+
+
+}
+# 6 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp" 2
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\stdlib.h" 1 3
+# 36 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\stdlib.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 1 3
+# 39 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+       
+# 40 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 1 3
+# 199 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 3
+namespace std
+{
+  typedef unsigned int size_t;
+  typedef int ptrdiff_t;
+
+
+  typedef decltype(nullptr) nullptr_t;
+
+}
+# 221 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 3
+namespace std
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+namespace __gnu_cxx
+{
+  inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
+}
+# 507 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\os_defines.h" 1 3
+# 508 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 2 3
+
+
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\cpu_defines.h" 1 3
+# 511 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\mingw32\\bits\\c++config.h" 2 3
+# 42 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 2 3
+# 75 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+# 1 "d:\\mingw\\include\\stdlib.h" 1 3
+# 34 "d:\\mingw\\include\\stdlib.h" 3
+       
+# 35 "d:\\mingw\\include\\stdlib.h" 3
+# 55 "d:\\mingw\\include\\stdlib.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 1 3 4
+# 56 "d:\\mingw\\include\\stdlib.h" 2 3
+# 90 "d:\\mingw\\include\\stdlib.h" 3
+extern "C" {
+# 99 "d:\\mingw\\include\\stdlib.h" 3
+extern int _argc;
+extern char **_argv;
+
+
+
+
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) int *__p___argc(void);
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) char ***__p___argv(void);
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t ***__p___wargv(void);
+# 142 "d:\\mingw\\include\\stdlib.h" 3
+   extern __attribute__((__dllimport__)) int __mb_cur_max;
+# 166 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int *_errno(void);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int *__doserrno(void);
+
+
+
+
+
+
+
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) char ***__p__environ(void);
+
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t ***__p__wenviron(void);
+# 202 "d:\\mingw\\include\\stdlib.h" 3
+extern __attribute__((__dllimport__)) int _sys_nerr;
+# 227 "d:\\mingw\\include\\stdlib.h" 3
+extern __attribute__((__dllimport__)) char *_sys_errlist[];
+# 238 "d:\\mingw\\include\\stdlib.h" 3
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int *__p__osver(void);
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int *__p__winver(void);
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int *__p__winmajor(void);
+extern __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int *__p__winminor(void);
+# 250 "d:\\mingw\\include\\stdlib.h" 3
+extern __attribute__((__dllimport__)) unsigned int _osver;
+extern __attribute__((__dllimport__)) unsigned int _winver;
+extern __attribute__((__dllimport__)) unsigned int _winmajor;
+extern __attribute__((__dllimport__)) unsigned int _winminor;
+# 289 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char **__p__pgmptr(void);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t **__p__wpgmptr(void);
+# 325 "d:\\mingw\\include\\stdlib.h" 3
+extern __attribute__((__dllimport__)) int _fmode;
+# 335 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int atoi (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long atol (const char *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) double strtod (const char *, char **);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) double atof (const char *);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) double _wtof (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wtoi (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long _wtol (const wchar_t *);
+# 378 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+float strtof (const char *__restrict__, char **__restrict__);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+long double strtold (const char *__restrict__, char **__restrict__);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long strtol (const char *, char **, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned long strtoul (const char *, char **, int);
+
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+long wcstol (const wchar_t *, wchar_t **, int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+unsigned long wcstoul (const wchar_t *, wchar_t **, int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) double wcstod (const wchar_t *, wchar_t **);
+
+
+
+
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+float wcstof (const wchar_t *__restrict__, wchar_t **__restrict__);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+long double wcstold (const wchar_t *__restrict__, wchar_t **__restrict__);
+# 451 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wgetenv (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wputenv (const wchar_t *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _wsearchenv (const wchar_t *, const wchar_t *, wchar_t *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wsystem (const wchar_t *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _wmakepath (wchar_t *, const wchar_t *, const wchar_t *, const wchar_t *,
+    const wchar_t *
+  );
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _wsplitpath (const wchar_t *, wchar_t *, wchar_t *, wchar_t *, wchar_t *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+wchar_t *_wfullpath (wchar_t *, const wchar_t *, size_t);
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t wcstombs (char *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wctomb (char *, wchar_t);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int mblen (const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t mbstowcs (wchar_t *, const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int mbtowc (wchar_t *, const char *, size_t);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int rand (void);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void srand (unsigned int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *calloc (size_t, size_t) __attribute__((__malloc__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *malloc (size_t) __attribute__((__malloc__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *realloc (void *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void free (void *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void abort (void) __attribute__((__noreturn__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void exit (int) __attribute__((__noreturn__));
+
+
+
+int __attribute__((__cdecl__)) __attribute__((__nothrow__)) atexit (void (*)(void));
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int system (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *getenv (const char *);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) void *bsearch
+(const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+ __attribute__((__cdecl__)) void qsort
+(void *, size_t, size_t, int (*)(const void *, const void *));
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int abs (int) __attribute__((__const__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long labs (long) __attribute__((__const__));
+# 519 "d:\\mingw\\include\\stdlib.h" 3
+typedef struct { int quot, rem; } div_t;
+typedef struct { long quot, rem; } ldiv_t;
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) div_t div (int, int) __attribute__((__const__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) ldiv_t ldiv (long, long) __attribute__((__const__));
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _exit (int) __attribute__((__noreturn__));
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long long _atoi64 (const char *);
+# 545 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _beep (unsigned int, unsigned int) __attribute__((__deprecated__));
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _seterrormode (int) __attribute__((__deprecated__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _sleep (unsigned long) __attribute__((__deprecated__));
+
+
+
+typedef int (* _onexit_t)(void);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) _onexit_t _onexit( _onexit_t );
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _putenv (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _searchenv (const char *, const char *, char *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_ecvt (double, int, int *, int *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_fcvt (double, int, int *, int *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_gcvt (double, int, char *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _makepath (char *, const char *, const char *, const char *, const char *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__))
+void _splitpath (const char *, char *, char *, char *, char *);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_fullpath (char*, const char*, size_t);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_itoa (int, char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_ltoa (long, char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_ultoa(unsigned long, char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_itow (int, wchar_t *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_ltow (long, wchar_t *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_ultow (unsigned long, wchar_t *, int);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* _i64toa (long long, char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* _ui64toa (unsigned long long, char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) long long _wtoi64 (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t* _i64tow (long long, wchar_t *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t* _ui64tow (unsigned long long, wchar_t *, int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int (_rotl)(unsigned int, int) __attribute__((__const__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned int (_rotr)(unsigned int, int) __attribute__((__const__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned long (_lrotl)(unsigned long, int) __attribute__((__const__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) unsigned long (_lrotr)(unsigned long, int) __attribute__((__const__));
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _set_error_mode (int);
+# 628 "d:\\mingw\\include\\stdlib.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int putenv (const char*);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void searchenv (const char*, const char*, char*);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* itoa (int, char*, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* ltoa (long, char*, int);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* ecvt (double, int, int*, int*);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* fcvt (double, int, int*, int*);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char* gcvt (double, int, char*);
+# 649 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) void _Exit(int) __attribute__((__noreturn__));
+
+
+
+
+
+
+typedef struct { long long quot, rem; } lldiv_t;
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) lldiv_t lldiv (long long, long long) __attribute__((__const__));
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) long long llabs (long long);
+# 670 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+long long strtoll (const char *__restrict__, char **__restrict, int);
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__))
+unsigned long long strtoull (const char *__restrict__, char **__restrict__, int);
+
+
+
+
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) long long atoll (const char *);
+# 726 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__deprecated__)) long long wtoll (const wchar_t *);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__deprecated__)) char *lltoa (long long, char *, int);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__deprecated__)) char *ulltoa (unsigned long long , char *, int);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__deprecated__)) wchar_t *lltow (long long, wchar_t *, int);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) __attribute__((__deprecated__)) wchar_t *ulltow (unsigned long long, wchar_t *, int);
+# 766 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int mkstemp (char *);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int __mingw_mkstemp (int, char *);
+# 808 "d:\\mingw\\include\\stdlib.h" 3
+inline __attribute__((__always_inline__))
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int mkstemp (char *__filename_template)
+{ return __mingw_mkstemp( 0, __filename_template ); }
+# 819 "d:\\mingw\\include\\stdlib.h" 3
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) char *mkdtemp (char *);
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) char *__mingw_mkdtemp (char *);
+
+inline __attribute__((__always_inline__))
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) char *mkdtemp (char *__dirname_template)
+{ return __mingw_mkdtemp( __dirname_template ); }
+
+
+
+
+
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int setenv( const char *, const char *, int );
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int unsetenv( const char * );
+
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int __mingw_setenv( const char *, const char *, int );
+
+inline __attribute__((__always_inline__))
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int setenv( const char *__n, const char *__v, int __f )
+{ return __mingw_setenv( __n, __v, __f ); }
+
+inline __attribute__((__always_inline__))
+__attribute__((__cdecl__)) __attribute__((__nothrow__)) int unsetenv( const char *__name )
+{ return __mingw_setenv( __name, __null, 1 ); }
+
+
+
+
+}
+# 76 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 2 3
+# 118 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+extern "C++"
+{
+namespace std
+{
+
+
+  using ::div_t;
+  using ::ldiv_t;
+
+  using ::abort;
+  using ::abs;
+  using ::atexit;
+
+
+
+
+
+  using ::atof;
+  using ::atoi;
+  using ::atol;
+  using ::bsearch;
+  using ::calloc;
+  using ::div;
+  using ::exit;
+  using ::free;
+  using ::getenv;
+  using ::labs;
+  using ::ldiv;
+  using ::malloc;
+
+  using ::mblen;
+  using ::mbstowcs;
+  using ::mbtowc;
+
+  using ::qsort;
+
+
+
+
+
+  using ::rand;
+  using ::realloc;
+  using ::srand;
+  using ::strtod;
+  using ::strtol;
+  using ::strtoul;
+  using ::system;
+
+  using ::wcstombs;
+  using ::wctomb;
+
+
+
+  inline long
+  abs(long __i) { return __builtin_labs(__i); }
+
+  inline ldiv_t
+  div(long __i, long __j) { return ldiv(__i, __j); }
+
+
+
+  inline long long
+  abs(long long __x) { return __builtin_llabs (__x); }
+# 201 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+
+}
+# 215 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+namespace __gnu_cxx
+{
+
+
+
+  using ::lldiv_t;
+
+
+
+
+
+  using ::_Exit;
+
+
+
+  using ::llabs;
+
+  inline lldiv_t
+  div(long long __n, long long __d)
+  { lldiv_t __q; __q.quot = __n / __d; __q.rem = __n % __d; return __q; }
+
+  using ::lldiv;
+# 247 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\cstdlib" 3
+  using ::atoll;
+  using ::strtoll;
+  using ::strtoull;
+
+  using ::strtof;
+  using ::strtold;
+
+
+}
+
+namespace std
+{
+
+  using ::__gnu_cxx::lldiv_t;
+
+  using ::__gnu_cxx::_Exit;
+
+  using ::__gnu_cxx::llabs;
+  using ::__gnu_cxx::div;
+  using ::__gnu_cxx::lldiv;
+
+  using ::__gnu_cxx::atoll;
+  using ::__gnu_cxx::strtof;
+  using ::__gnu_cxx::strtoll;
+  using ::__gnu_cxx::strtoull;
+  using ::__gnu_cxx::strtold;
+}
+
+
+
+}
+# 37 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\stdlib.h" 2 3
+
+using std::abort;
+using std::atexit;
+using std::exit;
+# 51 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\c++\\stdlib.h" 3
+using std::div_t;
+using std::ldiv_t;
+
+using std::abs;
+using std::atof;
+using std::atoi;
+using std::atol;
+using std::bsearch;
+using std::calloc;
+using std::div;
+using std::free;
+using std::getenv;
+using std::labs;
+using std::ldiv;
+using std::malloc;
+
+using std::mblen;
+using std::mbstowcs;
+using std::mbtowc;
+
+using std::qsort;
+using std::rand;
+using std::realloc;
+using std::srand;
+using std::strtod;
+using std::strtol;
+using std::strtoul;
+using std::system;
+
+using std::wcstombs;
+using std::wctomb;
+# 7 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp" 2
+# 1 "d:\\mingw\\include\\string.h" 1 3
+# 34 "d:\\mingw\\include\\string.h" 3
+       
+# 35 "d:\\mingw\\include\\string.h" 3
+# 53 "d:\\mingw\\include\\string.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 1 3 4
+# 54 "d:\\mingw\\include\\string.h" 2 3
+# 62 "d:\\mingw\\include\\string.h" 3
+# 1 "d:\\mingw\\include\\strings.h" 1 3
+# 33 "d:\\mingw\\include\\strings.h" 3
+       
+# 34 "d:\\mingw\\include\\strings.h" 3
+# 59 "d:\\mingw\\include\\strings.h" 3
+# 1 "d:\\mingw\\lib\\gcc\\mingw32\\6.3.0\\include\\stddef.h" 1 3 4
+# 60 "d:\\mingw\\include\\strings.h" 2 3
+
+extern "C" {
+
+int __attribute__((__cdecl__)) __attribute__((__nothrow__)) strcasecmp( const char *, const char * );
+int __attribute__((__cdecl__)) __attribute__((__nothrow__)) strncasecmp( const char *, const char *, size_t );
+# 80 "d:\\mingw\\include\\strings.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _stricmp( const char *, const char * );
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _strnicmp( const char *, const char *, size_t );
+# 100 "d:\\mingw\\include\\strings.h" 3
+}
+# 63 "d:\\mingw\\include\\string.h" 2 3
+
+
+extern "C" {
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *memchr (const void *, int, size_t) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int memcmp (const void *, const void *, size_t) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *memcpy (void *, const void *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *memmove (void *, const void *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *memset (void *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strcat (char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strchr (const char *, int) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int strcmp (const char *, const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int strcoll (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strcpy (char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t strcspn (const char *, const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strerror (int);
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t strlen (const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strncat (char *, const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int strncmp (const char *, const char *, size_t) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strncpy (char *, const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strpbrk (const char *, const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strrchr (const char *, int) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t strspn (const char *, const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strstr (const char *, const char *) __attribute__((__pure__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strtok (char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t strxfrm (char *, const char *, size_t);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strerror (const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *_memccpy (void *, const void *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _memicmp (const void *, const void *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strdup (const char *) __attribute__((__malloc__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _strcmpi (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _stricoll (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strlwr (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strnset (char *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strrev (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strset (char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *_strupr (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void _swab (const char *, char *, size_t);
+# 126 "d:\\mingw\\include\\string.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _strncoll(const char *, const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _strnicoll(const char *, const char *, size_t);
+
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void *memccpy (void *, const void *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int memicmp (const void *, const void *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strdup (const char *) __attribute__((__malloc__));
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int strcmpi (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int stricmp (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int stricoll (const char *, const char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strlwr (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int strnicmp (const char *, const char *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strnset (char *, int, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strrev (char *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strset (char *, int);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) char *strupr (char *);
+
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) void swab (const char *, char *, size_t);
+# 170 "d:\\mingw\\include\\string.h" 3
+# 1 "d:\\mingw\\include\\wchar.h" 1 3
+# 35 "d:\\mingw\\include\\wchar.h" 3
+       
+# 36 "d:\\mingw\\include\\wchar.h" 3
+# 392 "d:\\mingw\\include\\wchar.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcscat (wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcschr (const wchar_t *, wchar_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcscmp (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcscoll (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcscpy (wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t wcscspn (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t wcslen (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsncat (wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcsncmp (const wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsncpy (wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcspbrk (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsrchr (const wchar_t *, wchar_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t wcsspn (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsstr (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcstok (wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) size_t wcsxfrm (wchar_t *, const wchar_t *, size_t);
+
+
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcsdup (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wcsicmp (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wcsicoll (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcslwr (wchar_t*);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wcsnicmp (const wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcsnset (wchar_t *, wchar_t, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcsrev (wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcsset (wchar_t *, wchar_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *_wcsupr (wchar_t *);
+
+
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wcsncoll (const wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int _wcsnicoll (const wchar_t *, const wchar_t *, size_t);
+# 445 "d:\\mingw\\include\\wchar.h" 3
+int __attribute__((__cdecl__)) __attribute__((__nothrow__)) wcscmpi (const wchar_t *, const wchar_t *);
+# 457 "d:\\mingw\\include\\wchar.h" 3
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsdup (const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcsicmp (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcsicoll (const wchar_t *, const wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcslwr (wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) int wcsnicmp (const wchar_t *, const wchar_t *, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsnset (wchar_t *, wchar_t, size_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsrev (wchar_t *);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsset (wchar_t *, wchar_t);
+ __attribute__((__cdecl__)) __attribute__((__nothrow__)) wchar_t *wcsupr (wchar_t *);
+# 491 "d:\\mingw\\include\\wchar.h" 3
+extern size_t __mingw_wcsnlen (const wchar_t *, size_t);
+
+
+inline __attribute__((__always_inline__)) size_t wcsnlen (const wchar_t *__text, size_t __maxlen)
+{ return __mingw_wcsnlen (__text, __maxlen); }
+# 171 "d:\\mingw\\include\\string.h" 2 3
+# 193 "d:\\mingw\\include\\string.h" 3
+extern size_t __mingw_strnlen (const char *, size_t);
+
+
+inline __attribute__((__always_inline__)) size_t strnlen (const char *__text, size_t __maxlen)
+{ return __mingw_strnlen (__text, __maxlen); }
+# 212 "d:\\mingw\\include\\string.h" 3
+extern int strerror_r (int, char *, size_t);
+# 227 "d:\\mingw\\include\\string.h" 3
+inline __attribute__((__always_inline__)) int strerror_s (char *__buf, size_t __len, int __err)
+{ return strerror_r (__err, __buf, __len); }
+
+
+
+
+}
+# 8 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp" 2
+
+
+
+
+
+# 12 "D:\\dev-cpp_gr (1)\\dev-cpp_gr\\Dev-Cpp\\Untitled1.cpp"
+typedef struct arcell
+{ int adj;
+}arcell,adjmatrix[20][20];
+typedef struct vexsinfo
+{ int position;
+ char name[32];
+ char introduction[256];
+ char super_introduction[512];
+}vexsinfo;
+typedef struct mgraph
+{ vexsinfo vexs[20];
+ adjmatrix arcs;
+ int vexnum,arcnum;
+}mgraph;
+
+mgraph campus;
+int d[30];
+int visited[30];
+int shortest[20][20];
+int pathh[20][20];
+mgraph initgraph()
+{ int i=0,j=0;
+ mgraph c;
+ c.vexnum=11;
+ c.arcnum=20;
+ for(i=1;i<=11;i++)
+   c.vexs[i].position=i;
+
+ strcpy(c.vexs[1].name,"西操场、鼎山楼、知行楼");strcpy(c.vexs[1].super_introduction,"\n西操场：西操场位于校园西侧，坐落在鼎山山脚下，内设排球场、篮球场、田径场。是同学上体育课的绝佳地点。\n鼎山：和茂岭山共同作为学校的标志，我校鼎山学堂由此得名。\n知行楼：得名于“知行合一”，表达了学校对同学们的殷切希望。内设模拟法庭，目前刑事司法学院和民商法学院在此学习。\n");
+ strcpy(c.vexs[1].introduction,"有足球场、篮球场，比东操场较小；法学院所在地，学校办公室");
+ strcpy(c.vexs[2].name,"茂陵山");strcpy(c.vexs[2].super_introduction,"\n茂岭山：因济南战役闻名，从校园内上山山路平坦，风景秀丽。因有不少解放军战士牺牲于此，\n所以校园内、山腰上有不少烈士墓。清明时节常常有人前来缅怀纪念。\n");
+ strcpy(c.vexs[2].introduction,"校内一座山，曾是解放济南战役战场遗址");
+ strcpy(c.vexs[3].name,"至善楼、致远楼");strcpy(c.vexs[3].super_introduction,"\n至善楼：目前至善楼是网络空间安全学院和外国语学院的同学学习生活的地方。内有多个机房、实验室、听力教室等等。\n致远楼：致远楼用于法学院和经济贸易法学院同学的学习和生活，另外致远楼有多个阶梯教室，可用于多种课程教学。");
+ strcpy(c.vexs[3].introduction,"网络空间安全学院、外国语学院、经济贸易法学院所在地");
+ strcpy(c.vexs[4].name,"文体馆");strcpy(c.vexs[4].super_introduction,"\n文体馆：位于学校中部偏东，内设游泳馆，瑜伽室，乒乓球馆和台球室等等，\n以供同学们上体育课、进行体育活动使用。二楼有印刷室，为大家打印资料提供了便利。\n");
+ strcpy(c.vexs[4].introduction,"室内运动场、游泳馆");
+ strcpy(c.vexs[5].name,"图书馆");strcpy(c.vexs[5].super_introduction,"\n图书馆：是省内藏书最多的高校图书馆之一，现有藏书256万册。始建于1979年，内设多个学科借阅室，\n学术氛围浓厚。还经常开展读者俱乐部、读书沙龙等活动，繁荣了文化氛围。\n");
+ strcpy(c.vexs[5].introduction,"读书圣地，建筑面积6666平方米");
+ strcpy(c.vexs[6].name,"一餐、二餐、礼堂、澡堂一");strcpy(c.vexs[6].super_introduction,"\n礼堂：位于学校南门口，第二餐厅楼上。是我校学术报告、文艺晚会、话剧公演、毕业典礼的举办地点。\n一餐二餐：位于南门，不仅便捷了学生用餐，也方便了来校的人们在这里用餐。\n澡堂：环境良好，每日晚上十点前为学生提供服务。\n");
+ strcpy(c.vexs[6].introduction,"学生餐厅，礼堂可举办中、大型学术会议；洗浴");
+ strcpy(c.vexs[7].name,"南大门");strcpy(c.vexs[7].super_introduction,"\n南大门：山东政法学院拆掉原来的大门，在门口两侧修建两个花坛，让更多的人来到校园内，\n了解我们学校的文化，也方便了济南居民一览茂陵山美景，了解茂陵战役。\n");
+ strcpy(c.vexs[7].introduction,"学校大门、学校班车进出口");
+ strcpy(c.vexs[8].name,"校医院、新南小门");strcpy(c.vexs[8].super_introduction,"\n校医院：为给学生提供更好的服务，我校的校医院进行了翻修，保障了学生的健康情况，\n校医都有多年的行医经验。新小南门：为了缓解南大门的交通压力，我校又建造了新小南门，也方便了学生的出行。\n");
+ strcpy(c.vexs[8].introduction,"可买药，看小病的地方；距离校医院和教工餐厅、新澡堂比较近");
+ strcpy(c.vexs[9].name,"东操场、三餐");strcpy(c.vexs[9].super_introduction,"\n东操场：在东操场，我们开展了田径，健美操，太极扇，女子防身术，大保健，羽毛球，乒乓球等体育课程，\n也是学生利用体育活动放松自己的主要场所。\n 三餐：三餐是靠近东门几个餐厅里最大的一个，共有三层，食物品种多样，\n又在第三层加了独具特色的火锅，饺子，甜品，深受学生党的喜爱。\n");
+ strcpy(c.vexs[9].introduction,"举办大、中型体育活动处；学生食堂，人气较高");
+ strcpy(c.vexs[10].name,"菜鸟驿站");strcpy(c.vexs[10].super_introduction,"\n菜鸟驿站：负责接收并整理分类学生的快递，也为学生提供在校兼职的机会。\n极大的辩解了学生的生活。\n");
+ strcpy(c.vexs[10].introduction,"收发快递处");
+ strcpy(c.vexs[11].name,"东门");strcpy(c.vexs[11].super_introduction,"\n东门：为临近东门的住校学生提供了出行的方便。\n");
+ strcpy(c.vexs[11].introduction,"距离小吃街、公交车站、天联超市较近");
+ for(i=1;i<=11;i++)
+   for(j=1;j<=11;j++)
+     c.arcs[i][j].adj=2000;
+ c.arcs[1][2].adj=60;c.arcs[1][5].adj=70;c.arcs[2][3].adj=40;c.arcs[2][4].adj=40;c.arcs[3][4].adj=15;
+ c.arcs[3][9].adj=10;c.arcs[3][10].adj=30;c.arcs[4][5].adj=30;c.arcs[4][9].adj=20;c.arcs[5][6].adj=60;
+ c.arcs[5][7].adj=60;c.arcs[5][8].adj=30;c.arcs[5][9].adj=40;c.arcs[6][7].adj=10;c.arcs[7][8].adj=30;
+ c.arcs[8][9].adj=50;c.arcs[8][11].adj=200;c.arcs[9][10].adj=35;c.arcs[9][11].adj=10;c.arcs[10][11].adj=20;
+ for(i=1;i<=11;i++)
+   for(j=1;j<=11;j++)
+     c.arcs[j][i].adj=c.arcs[i][j].adj;
+    return c;
+}
+
+int locatevex(mgraph c,int v)
+{ int i;
+ for(i=1;i<=c.vexnum;i++)
+   if(v==c.vexs[i].position) return i;
+  return -1;
+}
+
+void path(mgraph c,int m,int n,int k)
+{ int s,t=k+1,length=0;
+ if(d[k]==n&&k<8)
+ { for(s=0;s<k;s++)
+     {
+      length=length+c.arcs[d[s]][d[s+1]].adj;
+  }
+  if(length<=100)
+  { for(s=0;s<k;s++)
+         {
+         printf("%d%s--->",d[s],c.vexs[d[s]].name);
+      }
+         printf("%d%s  ",d[s],c.vexs[d[s]].name);
+         printf("总路线长为%d米\n\n",length);
+  }
+ }
+ else
+ { s=1;
+  while(s<=c.vexnum)
+  { if((c.arcs[d[k]][s].adj<2000)&&(visited[s]==0))
+   { visited[s]=1;
+    d[k+1]=s;
+    path(c,m,n,t);
+    visited[s]=0;
+   }
+   s++;
+  }
+ }
+}
+
+int allpath(mgraph c)
+{ int k,i,j,m,n;
+ printf("\n\n请输入您想要查询的两个景点的编号：\n\n");
+ scanf("%d%d",&i,&j);printf("\n\n");
+ m=locatevex(c,i);
+ n=locatevex(c,j);
+ d[0]=m;
+ for(k=0;k<11;k++)
+   visited[k]=0;
+ visited[m]=1;
+ path(c,m,n,0);
+ return 1;
+}
+
+void shortestpath_dij(mgraph c)
+{ int v0,v,w,k=1,min,t,p;
+ int final[20];
+ int Patharc[20];
+    int ShortPathtable[20];
+ printf("\n请输入一个起始景点的编号：");
+ scanf("%d",&v0);printf("\n\n");
+ while(v0<0||v0>11)
+ { printf("\n您输入的景点编号不存在\n");
+  printf("请重新输入：");
+  scanf("%d",&v0);
+ }
+
+ for(v=1;v<=c.vexnum;v++)
+ { final[v]=0;
+  ShortPathtable[v]=c.arcs[v0][v].adj;
+  Patharc[v]=0;
+  }
+  ShortPathtable[v0]=0;
+  final[v0]=1;
+
+  for(v=1;v<=c.vexnum;v++)
+  { min=2000;
+   for(w=1;w<=c.vexnum;w++)
+   { if(!final[w]&&ShortPathtable[w]<min)
+    { k=w;
+     min=ShortPathtable[w];
+    }
+   }
+   final[k]=1;
+
+   for(w=1;w<=c.vexnum;w++)
+   {
+   if(!final[w]&&(min+c.arcs[k][w].adj<ShortPathtable[w]))
+   { ShortPathtable[w]=min+c.arcs[k][w].adj;
+    Patharc[w]=k;
+   }
+    }
+     }
+
+
+     printf("打印P数组:");
+     for(t=1;t<=c.vexnum;t++)
+     {
+      printf("%d ",Patharc[t]);
+  }
+  printf("\n\n");
+
+  printf("打印S数组:");
+     for(t=1;t<=c.vexnum;t++)
+     {
+      printf("%d ",ShortPathtable[t]);
+  }
+  printf("\n\n");
+
+
+  for(t=1;t<=c.vexnum;t++)
+  { p=t;
+   if(t!=v0)
+   { printf("%d%s",t,c.vexs[t].name);
+    for(w=1;w<=c.vexnum;w++)
+    { if(Patharc[p]!=0)
+     { printf("<--%d%s",Patharc[p],c.vexs[p].name);
+      p=Patharc[p];
+     }
+    }
+    printf("<--%d%s",v0,c.vexs[v0].name);
+    printf("\n总路线长为%d米\n\n",ShortPathtable[t]);
+   }
+   }
+}
+
+void menu()
+{ printf(" ┌──────────────────────────────────────────────────────┐\n");
+ printf(" │ ╭ ═══════════════════════════════════════════════ ╮  │\n");
+ printf(" │ ││        欢 迎 使 用 校 园 导 游 系 统          ││  │\n");
+   printf(" │ ╰ ═══════════════════════════════════════════════ ╯  │\n");
+   printf(" │                      欢迎来到                        │\n");
+   printf(" │                    山东政法学院                      │\n");
+   printf(" │                     菜 单 选 择                      │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" │  *  1.菜单                **   2.查看游览路线（迪）* │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" │  *  3.查询景点间最短路径  **   4.查询景点间所有路径* │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" │  *  5.学校景点介绍        **   6.景点信息查询      * │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" │  *  7.学校地图            **   8.更改图信息        * │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" │  *  0.退出                **   第一小组*^_^*       * │\n");
+ printf(" │  *************************************************** │\n");
+ printf(" └──────────────────────────────────────────────────────┘\n");
+}
+
+
+int creatgraph(mgraph *c)
+{ int i,j,m,n,v0,v1,distance;
+ printf("请输入图的顶点数和边数: \n");
+ scanf("%d %d",&c->vexnum,&c->arcnum);
+ printf("下面请输入景点的信息： \n");
+ for(i=1;i<=c->vexnum;i++)
+ { printf("请输入景点的编号：");
+  scanf("%d",&c->vexs[i].position);
+  printf("\n请输入景点的名称：");
+  scanf("%s",&c->vexs[i].name);
+  printf("\n请输入景点的简介：");
+  scanf("%s",&c->vexs[i].introduction);
+  printf("\n请输入修改后景点的详细介绍:");
+  scanf("%s",&c->vexs[i].super_introduction);
+ }
+ for(i=1;i<=c->vexnum;i++)
+   for(j=1;j<=c->vexnum;j++)
+     c->arcs[i][j].adj=2000;
+ printf("下面请输入图的边的信息：\n");
+ for(i=1;i<=c->vexnum;i++)
+ { printf("\n第%d条边的起点 终点 长度为：",i);
+  scanf("%d %d %d",&v0,&v1,&distance);
+  m=locatevex(campus,v0);
+  n=locatevex(campus,v1);
+  if(m>0&&n>0)
+  { c->arcs[m][n].adj=distance;
+   c->arcs[n][m].adj=c->arcs[m][n].adj;
+  }
+ }
+ return 1;
+}
+
+int newgraph(mgraph *c)
+{ int changenum;
+ int i,m,n,t,distance,v0,v1;
+ printf("\n下面请输入您要修改的景点的个数：\n");
+ scanf("%d",&changenum);
+ while(changenum<0||changenum>11)
+ { printf("\n输入错误！请重新输入");
+  scanf("%d",&changenum);
+ }
+ for(i=0;i<changenum;i++)
+ { printf("\n请输入景点的编号：");
+  scanf("%d",&m);
+  t=locatevex(campus,m);
+  printf("\n请输入修改后景点的名称:");
+  scanf("%s",&c->vexs[t].name);
+  printf("\n请输入修改后景点的简介:");
+  scanf("%s",&c->vexs[t].introduction);
+  printf("\n请输入修改后景点的详细介绍:");
+  scanf("%s",&c->vexs[t].super_introduction);
+ }
+ printf("\n下面请输入您要更新的边数");
+ scanf("%d",&changenum);
+ while(changenum<0||changenum>11)
+ { printf("\n输入错误！请重新输入");
+  scanf("%d",&changenum);
+ }
+ if(changenum!=0)
+ printf("\n下面请输入更新边的信息：\n");
+ for(i=1;i<=changenum;i++)
+ { printf("\n修改的第%d条边的起点 终点 长度为：",i);
+  scanf("%d %d %d",&v0,&v1,&distance);
+  m=locatevex(campus,v0);
+  n=locatevex(campus,v1);
+  if(m>=0&&n>=0)
+  { c->arcs[m][n].adj=distance;
+   c->arcs[n][m].adj=c->arcs[m][n].adj;
+  }
+  }
+ return 1;
+}
+
+int enarc(mgraph *c)
+{ int m,n,distance;
+ printf("\n请输入边的起点和终点编号，权值：");
+ scanf("%d %d %d",&m,&n,&distance);
+ while(m<0||m>c->vexnum||n<0||n>c->vexnum)
+ { printf("输入错误，请重新输入：");
+  scanf("%d %d",&m,&n);
+ }
+ if(locatevex(campus,m)<0)
+ { printf("此节点%d已删除",m);
+  return 1;
+ }
+ if(locatevex(campus,n)<0)
+ { printf("此节点%d已被删除",n);
+  return 1;
+ }
+
+ c->arcs[m][n].adj=distance;
+ c->arcs[n][m].adj=c->arcs[m][n].adj;
+ c->arcnum --;
+ return 1;
+}
+
+int envex(mgraph *c)
+{ int i;
+    c->vexnum++;
+ printf("请输入您要增加结点的信息：");
+ printf("\n编号：");
+ scanf("%d",&c->vexs[c->vexnum].position);
+ printf("名称：");
+ scanf("%s",&c->vexs[c->vexnum].name);
+ printf("简介：");
+ scanf("%s",&c->vexs[c->vexnum].introduction);
+ printf("详细介绍：");
+ scanf("%s",&c->vexs[c->vexnum].super_introduction);
+
+ for(i=1;i<=c->vexnum;i++)
+ { c->arcs[c->vexnum][i].adj=2000;
+  c->arcs[i][c->vexnum].adj=2000;
+ }
+ return 1;
+}
+
+int delvex(mgraph *c)
+{ int i=0,j;
+ int m,v;
+ if(c->vexnum<=0)
+ { printf("图中已无顶点");
+  return 1;
+ }
+ printf("\n下面请输入您要删除的景点编号：");
+ scanf("%d",&v);
+ while(v<0||v>11)
+ { printf("\n输入错误！请重新输入:");
+  scanf("%d",&v);
+ }
+ m=locatevex(campus,v);
+ if(m<0)
+ { printf("此顶点%d已删除\n",v);
+  return 1;
+ }
+ for(i=m;i<=c->vexnum-1;i++)
+   for(j=1;j<=c->vexnum;j++)
+     c->arcs[i][j]=c->arcs[i+1][j];
+ for(i=m;i<=c->vexnum-1;i++)
+   for(j=1;j<=c->vexnum;j++)
+     c->arcs[j][i]=c->arcs[j][i+1];
+ c->vexs[v].position=-1;
+ c->vexnum--;
+ return 1;
+}
+
+int delarc(mgraph *c)
+{ int m,n,v0,v1;
+ if(c->vexnum<=0)
+ { printf("图中已无边，无法删除。");
+  return 1;
+ }
+ printf("\n下面请输入您要删除的边的起点和终点编号：");
+ scanf("%d %d",&v0,&v1);
+ m=locatevex(campus,v0);
+ if(m<0)
+ { printf("此%d顶点已删除",v0);
+  return 1;
+ }
+ n=locatevex(campus,v1);
+ if(n<0)
+ { printf("此%d顶点已删除",v1);
+  return 1;
+ }
+ c->arcs[m][n].adj=2000;
+ c->arcs[n][m].adj=2000;
+ c->arcnum --;
+ return 1;
+}
+
+void printmatrix(mgraph c)
+{ int i,j,k=0;
+ for(i=1;i<=11;i++)
+ { if(c.vexs[i].position!=-1)
+    printf("%6d",i);
+ }
+ printf("\n");
+ for(i=1;i<=c.vexnum;i++)
+ { for(j=1;j<=c.vexnum;j++)
+         { if(c.arcs[i][j].adj==2000)
+                printf(" *#@* ");
+            else
+                printf("%6d",c.arcs[i][j].adj);
+           k++;
+            if(k%c.vexnum==0) printf("\n");
+          }
+   }
+}
+
+int changegraph(mgraph *c)
+{ int yourchoice;
+ printf("(1)重新建图     (2)删除结点  (3)删除边\n");
+ printf("(4)增加结点     (5)增加边    (6)更新信息\n");
+ printf("(7)打印邻接矩阵 (8)返回上一级\n");
+ do
+ { printf("请输入您的选择：");
+     scanf("%d",&yourchoice);
+     switch(yourchoice)
+     { case 1:creatgraph(c);break;
+   case 2:delvex(c);break;
+   case 3:delarc(c);break;
+   case 4:envex(c);break;
+   case 5:enarc(c);break;
+   case 6:newgraph(c);break;
+   case 7:printmatrix(campus);break;
+   case 8:system("cls");menu();return 1;
+   default:printf("未找到该功能，请输入有效选项！\n");break;
+  }
+ }while(yourchoice);
+}
+int user_log()
+{ int i;
+ int a[6]={1,2,3,4,5,6},b[6];
+
+
+ printf("\n请输入6位密码(每输入一位密码间隔一个空格)：\n");
+ for(i=0;i<6;i++)
+   scanf("%d",&b[i]);
+ for(i=0;i<6;i++)
+ { if(a[i]!=b[i])
+     {
+      printf("密码错误!自动返回上一级\n");menu();return 0;
+  }
+ }
+ printf("密码正确，登陆成功！\n\n");
+ changegraph(&campus);
+}
+
+void floyd(mgraph c)
+{ int i,j,k;
+ for(i=1;i<=11;i++)
+ { for(j=1;j<=11;j++)
+  { shortest[i][j]=c.arcs[i][j].adj;
+   pathh[i][j]=j;
+  }
+ }
+ int i1,j1,k1=0;
+ for(i1=1;i1<=11;i1++)
+  printf("%6d",i1);
+ printf("\n");
+ for(i1=1;i1<=11;i1++)
+ { printf("%d",i1);
+   for(j1=1;j1<=11;j1++)
+   {
+      printf("%6d",pathh[i1][j1]);
+    k1++;
+    if(k1%11==0) printf("\n");
+   }
+ }
+ printf("\n\n\n");
+
+ for(k=1;k<=11;k++)
+ { for(i=1;i<=11;i++)
+  { for(j=1;j<=11;j++)
+    {
+     if(shortest[i][j]>shortest[i][k]+shortest[k][j])
+     { shortest[i][j]=shortest[i][k]+shortest[k][j];
+          pathh[i][j]=pathh[i][k];
+    }
+    }
+  }
+ }
+}
+void printf_Pshuzu()
+{ int i,j,k=0;
+ for(i=1;i<=11;i++)
+  printf("%6d",i);
+ printf("\n");
+ for(i=1;i<=11;i++)
+ { printf("%d",i);
+   for(j=1;j<=11;j++)
+   { printf("%6d",pathh[i][j]);
+    k++;
+    if(k%11==0) printf("\n");
+   }
+ }
+ printf("\n\n\n");
+}
+
+void display(mgraph c,int i,int j)
+{ int a,b;
+ a=i;b=j;
+ printf("您要查询的两景点间最短路径：\n\n");
+ printf("%d%s",a,c.vexs[a].name);
+ while(pathh[i][j]!=b)
+ { printf("-->%d%s",pathh[i][j],c.vexs[pathh[i][j]].name);
+   i=pathh[i][j];
+ }
+   printf("-->%d%s\n\n",b,c.vexs[b].name);
+ printf("%s-->%s的最短路径是：%d 米。\n\n",c.vexs[a].name,c.vexs[b].name,shortest[a][b]);
+}
+
+int shortdistance(mgraph c)
+{ int i,j;
+ printf("请输入要查询的两个景点的数字编号（1->11）中间用空格间隔开。\n");
+ scanf("%d %d",&i,&j);
+ if(i>11||i<0||j>11||j<0)
+ { printf("输入信息错误！\n\n");
+  printf("请输入要查询的两个景点的数字编号（1->11）中间用空格间隔开。\n");
+  scanf("%d %d",&i,&j);
+ }
+ else
+ { floyd(c);printf_Pshuzu();
+  display(c,i,j);
+ }
+ return 1;
+}
+
+void seeabout(mgraph c)
+{ int k;
+ printf("\n请输入要查询的景点编号：");
+ scanf("%d",&k);
+ while(k<=0||k>11)
+ { printf("\n您所输入的景点编号不存在！");
+  printf("\n请重新输入景点编号：");
+  scanf("%d",&k);
+ }
+ printf("\n\n编号：%-4d\n",c.vexs[k].position);
+ printf("\n景点名称：%-10s\n",c.vexs[k].name);
+ printf("\n详细介绍：%-80s\n\n",c.vexs[k].super_introduction);
+}
+
+void browsecompus(mgraph c)
+{ int i;
+ printf(" \n\n编号        景点名称                   简介\n");
+ printf("____________________________________________________________________________________________\n");
+ for(i=1;i<=11;i++)
+ { if(c.vexs[i].position!=-1)
+  printf("%-10d%-25s%-80s\n",c.vexs[i].position,c.vexs[i].name,c.vexs[i].introduction);
+ }
+ printf("____________________________________________________________________________________________\n");
+}
+
+void school_map()
+{ printf(" -------------------------------------------------山政地图------------------------------------------------\n");
+    printf(" ---------------------------------------------------------------------------------------------------------\n");
+ printf(" ___________                                                                                            ==\n");
+ printf("││西操场 ││*                         致远楼                至善楼                            菜鸟驿站   == \n");
+ printf("││_______││*                       * *  * * * * *  *  *  *   **   *  *  *  *  *  *  *  *  * *  * *  *   == \n");
+ printf(" __________ *                     *        ##                *                       *     大学生    *  == \n");
+ printf(" │鼎山楼 │ *-->***鼎山***茂陵山*                            *   ___________          *  自主学习中心  * ==\n");
+ printf(" │_______│ *                              ##     文体馆     *   │        │          *     四餐         *东\n");
+ printf(" __________ *                              ##               *   │ 东操场 │   三餐   * * * * * * ** * * *--> \n");
+ printf(" │知行楼 │ *                              ##              *     │________│          *    _________     *门 \n");
+ printf(" │_______│  *                    茂陵山        ##        *                          *    │慎行楼 │    * == \n");
+ printf(" ##           *                 战役遗址         ##      *                          *    │_______│    * ==\n");
+ printf(" ##            ****** 笃行楼    **********图书馆     ##  *                          *                 * ==\n");
+ printf(" ##              *             *          * * * * * * * * * * * * * * * * * ** * * * * * * * * * *  *   ==\n");
+ printf(" ##  停车场      *             *           ###           *                          _________           ==\n");
+ printf(" ##              *             *           ###   澡堂    *                          │8、9号│            ==\n");
+ printf(" ##  二餐        *    弘德楼   *           ###           *                          │_公寓_│            ==\n");
+ printf(" ##  澡堂一      *             *  尚德楼   ### 教工餐厅  *                                              ==\n");
+ printf(" ##  超市        *             *           ###           *            ==================================== \n");
+ printf(" ##  一餐        *             *  司法鉴定 ###  校医院   *            ==  \n");
+ printf(" ##  礼堂          *         *      中心   ###           *            ==    \n");
+ printf(" ================ 山东政法学院 =======================小南门============  \n");
+ printf(" ================     南门     =======================      ============\n");
+ printf("\n                                                      西<---|--->东  \n");
+}
+
+void mainwork()
+{ menu();
+ int yourchoice;
+ campus=initgraph();
+ do
+ { printf("请输入您的选择：");
+     scanf("%d",&yourchoice);
+     switch(yourchoice)
+     { case 1:system("cls");menu();break;
+   case 2:system("cls");shortestpath_dij(campus);break;
+   case 3:system("cls");shortdistance(campus);break;
+   case 4:system("cls");allpath(campus);break;
+   case 5:system("cls");browsecompus(campus);break;
+   case 6:system("cls");seeabout(campus);break;
+   case 7:system("cls");school_map();break;
+   case 8:system("cls");user_log();break;
+   case 0:system("cls");printf("谢谢使用\n");break;
+   default:printf("未找到该功能，请输入有效选项！\n");break;
+  }
+ }while(yourchoice);
+}
+int main()
+{ system("color 1f");
+ system("mode con: cols=140 lines=130");
+ system("SchoolGraph.png");
+ mainwork();
+ return 0;
+}
