@@ -149,36 +149,6 @@ int locatevex(mgraph c,int v)//locatevex
  	return -1;//没有找到这个顶点 
 } 
 
-/*void manage_map_information()//管理地图信息
-{
-	int outcome=verification();//权限核验结果。  如果返回结果为1，则可登入系统修改；否则返回上一级
-	if (outcome == 1)
-	{
-		printf("密码正确，登入系统成功!\n");
-		manage_map_information();
-	}
-	else
-	{
-		printf("密码输入错误！自动返回上一级\n");menuwork1();return ;
-	}
-
-}
-
-void manage_user_information()//管理用户信息
-{
-	int outcome = verification();//权限核验结果。  如果返回结果为1，则可登入系统修改；否则返回上一级
-	if (outcome == 1)
-	{
-		printf("密码正确，登入系统成功!\n");
-		manage_user_information();
-	}
-	else
-	{
-		printf("密码输入错误！自动返回上一级\n");menu1();return;
-	}
-
-}*/
-
 //以下是修改图的相关信息。包括建图、更新信息、删除、增加结点和边
 //增加景点 
 int add_attraction (mgraph *c)
@@ -397,36 +367,8 @@ int  shortestpath(mgraph c){
 	}
 	return 1;
 }
-/*
-//4查询景点间所有路径
-void allpath(mgraph *c,int m,int n,int t){
-	int s,k=t+1,length=0;
-	if(a[t]==n){
-		for(s=0;s<t;s++){
-			length=length+c.arcs[a[s]][a[s+1]].adj;
-		}
-		if(length<=1000){
-		  for(s=0;s<t;s++){
-			printf("%d%s-->",a[s],c.arcs[a[s]].name);
-		}
-		printf("%d%s  ",a[s],c.arcs[a[s]].name);
-		printf("总路径长为%d\n",length);
-	  }
-	}	
-	else{
-		s=1;
-		while(s<=c.num){
-			if((c.attr[a[t][s].adj<Infinity)&&(visited[s]==0)){
-				visited[s]=1;
-				a[t+1]=s;
-				visited[s]=0;
-			}
-			s++;
-		}
-	}
-}
-*/
-//3.查找并输出序号为m,n景点间的长度不超过8个景点的路径 
+
+//4.查找并输出序号为m,n景点间的长度不超过8个景点的路径 
 void pathh(mgraph c,int m,int n,int k)
 {	int s,t=k+1,length=0;//t用于存放路径上下一个顶点对应的d[]数组元素的下标 
 	if(d[k]==n&&k<8)//若d[k]是终点n且景点个数<=8,则输出该路径 
